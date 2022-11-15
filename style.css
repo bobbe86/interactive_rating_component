@@ -1,0 +1,192 @@
+@import 'reset.css';
+
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+
+
+### Neutral
+
+
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Overpass](https://fonts.google.com/specimen/Overpass)
+- Weights: 400, 700 */
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light_Grey: hsl(217, 12%, 63%);
+    --Medium_Grey: hsl(216, 12%, 54%);
+    --Dark_Blue: rgb(40, 46, 55);
+    --Very_Dark_Blue: hsl(216, 12%, 8%);
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very_Dark_Blue);
+    font-family: 'Overpass', sans-serif;
+    max-width: 1440px;
+    height: 100vh;
+
+}
+
+
+
+.orig_state {
+    display: flex;
+    max-width: 400px;
+    min-width: 375px;
+    padding: 1rem 2rem;
+    flex-direction: column;
+    border-radius: 25px;
+    color: var(--White);
+    background-image: linear-gradient(to top, #191e27, #1b2029, #1c212a, #1e232c, #20252e, #21262f, #222730, #232831, #232831, #232831, #232831, #232831);
+    font-family: 'Overpass', sans-serif;
+}
+
+.star_img {
+    background-color: var(--Dark_Blue);
+    width: 3rem;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+li {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    margin-bottom: 1rem;
+    background: #fff;
+    text-align: center;
+    background-color: var(--Dark_Blue);
+    color: var(--Light_Grey);
+}
+
+input {
+    border: none;
+    color: var(--Light_Grey);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: var(--Dark_Blue);
+    text-decoration: none;
+}
+
+
+
+.orig_state p {
+    font-size: 15px;
+    color: var(--Medium_Grey);
+    padding: 1rem 0;
+    margin: 0;
+}
+
+
+.orig_state button {
+    width: 100%;
+    font-size: .85rem;
+    letter-spacing: .5ch;
+    padding: .80rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: var(--White);
+    background-color: var(--Orange);
+}
+
+button:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+    cursor: pointer;
+}
+
+input:hover {
+    color: var(--white);
+    background-color: var(--Light_Grey);
+    cursor: pointer;
+}
+
+input:focus {
+    color: var(--White);
+    background-color: var(--Orange);
+}
+
+.end_state {
+    display: flex;
+    max-width: 400px;
+    min-width: 375px;
+    height: 372.317px;
+    pad: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    color: var(--White);
+    background-image: linear-gradient(to top, #191e27, #1b2029, #1c212a, #1e232c, #20252e, #21262f, #222730, #232831, #232831, #232831, #232831, #232831);
+    font-family: 'Overpass', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.end_state img,
+span,
+.end_state h1 {
+    margin-bottom: 1.5rem;
+}
+
+.selected {
+    border-radius: 1rem;
+    padding: 2px 24px;
+    background-color: rgb(41, 46, 55);
+    color: var(--Orange);
+}
+
+.end_state p {
+    margin: 0 3rem;
+    color: var(--Medium_Grey);
+}
+
+.support {
+    text-align: center;
+}
